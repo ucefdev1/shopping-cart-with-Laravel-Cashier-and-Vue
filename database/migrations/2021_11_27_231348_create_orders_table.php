@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('transaction_id');
-            $table->total('user_id')->default(0);
+            $table->integer('total')->default(0);
             $table->timestamps();
         });
     }
